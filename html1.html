@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<div class="visivel" id="primeira">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<button onclick="botaoum()">Fazer Parte</button>
+</div>
+<div class="hidden" id="login" 		>
+<input type="email" id="email" placeholder="insira seu e-mail">
+<input type="password" id="senha" placeholder="insira sua senha">
+<button onclick="entrar()">Entrar</button>
+<button onclick="cadastro()">Cadastro</button>
+</div>
+<div class="hidden" id="cadastro">
+<input type="text" id="nome" placeholder="insira seu nome">
+<input type="number" id="numero" placeholder="insira seu numero">
+<input type="email" id="email" placeholder="insira seu email">
+<input type="password" id="senha" placeholder="insira sua senha">
+<button onclick="cadastrar()">Cadastrar</button>
+</div>
+<div class="hidden" id="mapa">
+<!-- colocar menu -->
+<div id="menu-bar">
+      <a id="btn" href="#">
+        <div id="menu-icon">
+          <div id="linha-1"></div>
+          <div id="linha-2"></div>
+          <div id="linha-3"></div>
+        </div>    
+      </a>  
+      <h1>APP</h1>     
+  </div>
+  
+  <nav class="hidden"> 
+    <a href="#" id="close"> X </a>
+    <ul> 
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li> 
+      <li><a href="#">Vídeos</a></li>
+      <li><a href="#">Portifólio</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+<p>mapinhaaaaa</p>
+<button onclick="registrar()">Registrar</button>
+<button onclick="feed()">Feed</button>
+</div>
+<div class="hidden" id="registro">
+<!-- colocar menu -->
+<input type="text" id="caixa" placeholder="insira as informações do morador de rua">
+<button onclick="registro()">Registrar</button>
+</div>
+<div class="hidden" id="feed">
+<!-- colocar menu -->
+<p>REGISTROS</p>
+</div>
+<script type="text/javascript" src="funcao.js"></script>
+
+
+</body>
+</html>
