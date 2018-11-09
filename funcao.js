@@ -16,15 +16,6 @@ function cadastro()
 	document.querySelector('#registro').className="hidden";
 	document.querySelector('#feed').className="hidden";
 }
-function cadastrar()
-{
-	document.querySelector('#primeira').className="hidden";
-	document.querySelector('#login').className="hidden";
-	document.querySelector('#cadastro').className="hidden";
-	document.querySelector('#mapa').className="visivel";
-	document.querySelector('#registro').className="hidden";
-	document.querySelector('#feed').className="hidden";
-}
 function registrar()
 {
 	document.querySelector('#primeira').className="hidden";
@@ -61,3 +52,21 @@ function entrar()
 	document.querySelector('#registro').className="hidden";
 	document.querySelector('#feed').className="visivel";
 }
+function cadastrar() /* aqui é onde as informações do cadastro são colocadas nas inputs */
+{	
+	var nome = document.getElementById('nome').value
+	var email = document.getElementById('emailCadastro').value
+	var numero = +document.getElementById('numero').value
+	var senha = document.getElementById('senhaCadastro').value
+	var pessoa = new Cad(nome, email, numero, senha);
+  	var bd = new Banco('cad');
+  	bd.inserir(pessoa);
+  	document.querySelector('#primeira').className="hidden";
+	document.querySelector('#login').className="hidden";
+	document.querySelector('#cadastro').className="hidden";
+	document.querySelector('#mapa').className="visivel";
+	document.querySelector('#registro').className="hidden";
+	document.querySelector('#feed').className="hidden";
+ 		
+	}
+	
