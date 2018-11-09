@@ -25,15 +25,6 @@ function registrar()
 	document.querySelector('#registro').className="visivel";
 	document.querySelector('#feed').className="hidden";
 }
-function registro()
-{
-	document.querySelector('#primeira').className="hidden";
-	document.querySelector('#login').className="hidden";
-	document.querySelector('#cadastro').className="hidden";
-	document.querySelector('#mapa').className="hidden";
-	document.querySelector('#registro').className="hidden";
-	document.querySelector('#feed').className="visivel";
-}
 function feed()
 {
 	document.querySelector('#primeira').className="hidden";
@@ -67,6 +58,16 @@ function cadastrar() /* aqui é onde as informações do cadastro são colocadas
 	document.querySelector('#mapa').className="visivel";
 	document.querySelector('#registro').className="hidden";
 	document.querySelector('#feed').className="hidden";
- 		
-	}
-	
+ }
+ function registro(){
+ 	var caixa = document.getElementById('caixa').value;
+ 	var info = new Informacoes(caixa);	
+  	var bada = new Bancodois('informacoes');
+  	bada.inserir(info);
+	document.querySelector('#primeira').className="hidden";
+	document.querySelector('#login').className="hidden";
+	document.querySelector('#cadastro').className="hidden";
+	document.querySelector('#mapa').className="hidden";
+	document.querySelector('#registro').className="hidden";
+	document.querySelector('#feed').className="visivel";
+ }

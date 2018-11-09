@@ -8,39 +8,8 @@
 html
 body{
   font-family: 'Source Sans Pro', sans-serif;
-}
-body{
-  align-items: center;
-  background: #e84118;
   display: flex;
-  justify-content: center;
-	
 }
-#primeira{
-  flex-direction: row; 
-  padding: 10rem;
-  height: 80vh;
-  width: 80vw;
-}
-#texto{
-  background: #eccc68;
-  height: 80vh;
-  width: 50vw;
-}
-#primeira
-#texto p{
-  height: 50vh;
-  width: 30vw;
-  padding: 5rem;
-  top: 5rem;
-}
-#login{
-	background: #eccc68;
-	flex-direction: column;
-	height: 80vh;
-  	width: 80vw;
-}
-
 
 
 
