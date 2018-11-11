@@ -3,42 +3,46 @@
 <head>
 	<title></title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
+<div id="principal">
 <div class="visivel" id="primeira">
-  <div id="texto"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+  <div id="texto"><p>   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus Page Maker including versions of Lorem Ipsum.</p></div>
   <button onclick="botaoum()">Fazer Parte</button>
 </div>
-<div class="hidden" id="login" 		>
-  <input type="email" id="email" placeholder="insira seu e-mail">
-  <input type="password" id="senha" placeholder="insira sua senha">
+<div class="hidden" id="login">
+  Senha<input type="email" id="email" placeholder="insira seu e-mail">
+  E-mail<input type="password" id="senha" placeholder="insira sua senha">
   <button onclick="entrar()">Entrar</button>
   <button onclick="cadastro()">Cadastro</button>
 </div>
 <div class="hidden" id="cadastro">
  <!-- banco de dados -->
-  <input type="text" id="nome" placeholder="insira seu nome">
-  <input type="number" id="numero" placeholder="insira seu numero">
-  <input type="text" id="emailCadastro" placeholder="insira seu email">
-  <input type="password" id="senhaCadastro" placeholder="insira sua senha">
+  Digite seu nome<input type="text" id="nome" placeholder="insira seu nome">
+  Digite seu número<input type="number" id="numero" placeholder="insira seu numero">
+  Digite seu e-mail<input type="text" id="emailCadastro" placeholder="insira seu email">
+  Digite a senha<input type="password" id="senhaCadastro" placeholder="insira sua senha">
   <button onclick="cadastrar()">Cadastrar</button>
 </div>
 <div class="hidden" id="mapa">
   <!-- colocar menu -->
-  <p>mapinhaaaaa</p>
+  <iframe src="https://www.google.com/maps/d/embed?mid=19KnvlGtGf04NfZN0FShWCaXaH9FB8CNd"></iframe>
   <button onclick="registrar()">Registrar</button>
   <button onclick="feed()">Feed</button>
 </div>
 <div class="hidden" id="registro">
   <!-- colocar menu -->
-  <input type="text" id="caixa" placeholder="insira as informações do morador de rua">
+  <textarea class="msg" id="caixa" cols="35" rows="8" placeholder="Colar aqui as informações escritas na descrição do ponto gerado no mapa"></textarea>
   <button onclick="registro()">Registrar</button>
 </div>
 <div class="hidden" id="feed">
   <!-- colocar menu -->
   <p>REGISTROS</p>
+</div>
 </div>
 <script type="text/javascript" src="funcao.js"></script>
 <script type="text/javascript" src="classe.js"></script>
