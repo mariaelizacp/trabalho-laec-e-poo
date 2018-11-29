@@ -1,7 +1,7 @@
 class Bancodois{
 	constructor(caixa)
 	{
-		this.nome_banco = nome;
+		this.nome_banco = caixa;
 		this.dados = JSON.parse(localStorage.getItem(this.nome_banco)) || [];
 	}
 	tamanho()//Retorna a quantidade de keys do banco
@@ -29,6 +29,11 @@ class Bancodois{
 	{
 		this.dados[posicao] = obj;
 		localStorage.setItem(this.nome_banco,  JSON.stringify(this.dados));
+	}
+	listar()
+	{
+		this.dados = JSON.parse(localStorage.getItem(this.nome_banco));
+		return this.dados;
 	}
 	
 }

@@ -7,35 +7,45 @@
 }
 html,
 body{
-  	height: 100vh;
+    height: 100vh;
 }
 body{
   	align-items: center;
-  	background:#4CAF50;
+  	background: white;
   	display: flex;
   	justify-content: center;
+    flex-direction: column;
 }
 #principal{
-  	position: relative;
+    align-items: center;
+    display: flex;
   	height: 80vh;
   	width: 90vw;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20%;
+    z-index: 1;
 }
 #primeira{
   	border-bottom-left-radius: 5px;
   	border-bottom-right-radius: 5px;
   	box-shadow: 0 10px 25px -10px #333;
-  	background:#f5d76e;
+  	background:#4DD0E1;
   	padding: 1rem;
   	position: absolute;
-  	top: 10vh;
+  	top: 25%;
+    align-items: center;
+    width: 30rem;
 }
 #primeira p{
   	text-align: justify;
+    font-family: 'Niramit', sans-serif;
+
 }
 #primeira button{
   	width: 100%;
-    background-color: #4CAF50;
+    background-color:#57BC90;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -44,7 +54,7 @@ body{
     cursor: pointer;
 }
 #texto{
-  	font-family: 'Bree Serif', serif;
+  	font-family: 'Niramit', sans-serif;
   	font-size: 20px;
   	text-align: justify;
   	color:#4CAF50;
@@ -53,16 +63,18 @@ body{
   	border-bottom-left-radius: 5px;
   	border-bottom-right-radius: 5px;
   	box-shadow: 0 10px 25px -10px #333;
-  	background:#f5d76e;
-  	color: #4CAF50;
+  	background:#4DD0E1;
+  	color: white;
   	font-size: 20px;
-  	font-family: 'Source Sans Pro', sans-serif;
+  	font-family: 'Niramit', sans-serif;
   	padding: 1rem;
   	position: absolute;
-  	top: 25vh;
+  	top: 25%;
+    align-items: center;
+    width: 30rem;
 }
 #login input{
-	width: 100%;
+	  width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -71,8 +83,8 @@ body{
     box-sizing: border-box;
 }
 #login button{
-	width: 100%;
-    background-color: #4CAF50;
+	  width: 100%;
+    background-color: #57BC90;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -81,19 +93,21 @@ body{
     cursor: pointer;
 }
 #cadastro{
-	border-bottom-left-radius: 5px;
+	  border-bottom-left-radius: 5px;
   	border-bottom-right-radius: 5px;
   	box-shadow: 0 10px 25px -10px #333;
-  	background:#f5d76e;
-  	color: #4CAF50;
+  	background:#4DD0E1;
+  	color: white;
   	font-size: 20px;
-  	font-family: 'Source Sans Pro', sans-serif;
+  	font-family: 'Niramit', sans-serif;
   	padding: 1rem;
   	position: absolute;
-  	top: 25vh;
+  	top: 25%;
+    align-items: center;
+    width: 30rem;
 }
 #cadastro input{
-	width: 100%;
+	  width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -102,8 +116,8 @@ body{
     box-sizing: border-box;
 }
 #cadastro button{
-	width: 100%;
-    background-color: #4CAF50;
+	  width: 100%;
+    background-color: #57BC90;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -112,24 +126,31 @@ body{
     cursor: pointer;
 }
 #mapa{
-	border-bottom-left-radius: 5px;
-  	border-bottom-right-radius: 5px;
-  	box-shadow: 0 10px 25px -10px #333;
-  	background:#f5d76e;
-  	color: #4CAF50;
-  	font-size: 20px;
-  	font-family: 'Source Sans Pro', sans-serif;
-  	padding: 1rem;
-  	position: absolute;
-  	top: 10vh;
+	  border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 10px 25px -10px #333;
+    background:#4DD0E1;
+    padding: 1rem;
+    position: absolute;
+    top: 25%;
+    align-items: center;
+    width: 30rem;
+    text-align: center;
 }
 #mapa iframe{
-	width: 70vw;
-	height: 50vh;
+	  width: 70vw;
+	  height: 50vh;
+}
+#mapa a{
+	  color: white;
+  	font-size: 20px;
+  	font-family: 'Niramit', sans-serif;
+  	text-decoration: underline;
+    text-align: center;
 }
 #mapa button{
-	width: 100%;
-    background-color: #4CAF50;
+	  width: 100%;
+    background-color: #57BC90;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -137,17 +158,20 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
+#mapa iframe{
+    width: 100%;
+    height: 60%;
+}
 #registro{
-	order-bottom-left-radius: 5px;
+	  border-bottom-left-radius: 5px;
   	border-bottom-right-radius: 5px;
   	box-shadow: 0 10px 25px -10px #333;
-  	background:#f5d76e;
+  	background:#4DD0E1;
   	color: #4CAF50;
   	font-size: 20px;
-  	font-family: 'Source Sans Pro', sans-serif;
+  	font-family: 'Niramit', sans-serif;
   	padding: 1rem;
   	position: absolute;
-  	top: 10vh;
   	margin: 0;
     top: 50%;
     left: 50%;
@@ -155,8 +179,8 @@ body{
     transform: translate(-50%, -50%)
 }
 #registro button{
-	width: 100%;
-    background-color: #4CAF50;
+	  width: 100%;
+    background-color: #57BC90;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -165,7 +189,7 @@ body{
     cursor: pointer;
 }
 #registro textarea{
-	width: 100%;
+	  width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -173,15 +197,169 @@ body{
     border-radius: 4px;
     box-sizing: border-box;
 }
-@media screen and (min-width: 590px){
-  /* Estilo exclusivo para telas a partir de 590px de largura */
-  /* Não se aplica para telas menores do que 590px */
-  #principal{
-    display: flex; 
-    width: 70vw; /* Sobrescrita da largura */
-  }
+#feed{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 10px 25px -10px #333;
+    background:#4DD0E1;
+    padding: 1rem;
+    position: absolute;
+    top: 25%;
+    align-items: center;
+    width: 30rem;
+    font-family: 'Niramit', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color:#4CAF50;
+}
+/* Definição de variáveis */
+:root{
+  --cor-texto: white;
+  --cor-texto-branco: #FEFEFE;
+  --fundo-header: #4DD0E1;
+  --altura-menu: 5rem;
 }
 
+/* Tipografia */
+a{
+  text-decoration: none;
+}
+
+a,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+div,
+span,
+strong,
+em{
+  color: var(--cor-texto);
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  color: var(--cor-texto);
+  font-family: 'Petit Formal Script', cursive;
+}
+
+
+
+header{
+  background: var(--fundo-header);
+  height: var(--altura-menu);
+  margin: auto;
+  padding: 0 2rem;
+  position: relative;
+  transition: all ease-in-out 0.5s;
+  width: 100%;
+  z-index: 2;
+}
+
+nav{
+  background: #57BC90;
+  height: 100%;
+  left: 0;  
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out .3s;
+}
+
+nav ul{
+  list-style: none;
+  padding: 2rem;
+  position: fixed;
+}
+
+nav li{
+  padding: 1rem 0;
+}
+
+nav a{
+  color: var(--cor-texto-branco);
+  display: block;
+  text-decoration: none;
+}
+
+nav.hidden{
+  overflow: hidden;
+  width: 0;
+}
+
+nav.active{
+  width: 30%;
+}
+
+header h1{
+  line-height: var(--altura-menu);
+  text-align: center;
+}
+
+#btn{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo menu-icon*/ 
+#menu-icon{
+  height: 25px;
+  line-height: 6rem;
+  width: 40px;
+}
+
+#menu-icon [id^="linha"]{
+  background: var(--cor-texto);
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+  width: 100%;  
+}
+
+#menu-icon [id^="linha"]:last-of-type{
+  margin-bottom: 0;
+}
+
+/* Botão para fechar Menu */
+#close{
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+/* Transições */
+nav,
+#menu-bar,
+header{
+    transition: all ease-in-out 0.4s;
+}            
+@media screen and (max-width: 520px){
+  /* Estilo exclusivo para telas a partir de 590px de largura */
+  /* Não se aplica para telas menores do que 590px */
+  #primeira{ 
+    width: 50vw; /* Sobrescrita da largura */
+  }
+  #login{
+     width: 50vw;
+  }
+  #cadastro
+  {
+     width: 50vw;
+  }
+  #mapa{
+   width: 50vw;
+  }
+  #registro{ 
+    width: 50vw;
+  }
+  #feed{
+     width: 50vw;
+  }
+}
 
 
 
