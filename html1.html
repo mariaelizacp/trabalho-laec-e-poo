@@ -11,7 +11,7 @@
    <header>
   <div id="menu-bar">
       <a id="btn" href="#">
-        <div id="menu-icon">
+        <div class="hidden" id="menu-icon">
           <div id="linha-1"></div>
           <div id="linha-2"></div>
           <div id="linha-3"></div>
@@ -22,38 +22,41 @@
   <nav class="hidden"> 
     <a href="#" id="close"> x </a>
     <ul> 
-      <li><a href="#home" onclick="home()">Home</a></li>
       <li><a href="#mapa" onclick="mapa()">Mapa</a></li> 
       <li><a href="#registrar" onclick="registrar()">Registrar</a></li>
       <li><a href="#listar" onclick="registro()">Registros</a></li>
+      <li><a href="#sair" onclick="sair()">Sair</a></li>
     </ul>
   </nav>
 </header>
 <div id="principal">
 <div class="visivel" id="primeira">
-  <div id="texto"><p>   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus Page Maker including versions of Lorem Ipsum.</p></div>
+  <div id="texto"><p>   Act é um lugar onde você facilita a ajuda a moradores de rua. Que muitas vezes passamos rotineiramente, e não reparamos nos mais necessitados. E no Act temos o objetivo de localizar essas pessoas, através de um mapa público deixando-os visíveis para as pessoas que por meio da cidadania tem o objetivo de desempenhar um papel de ajuda aos moradores, que segundo pesquisas do IPEA (Instituto de Pesquisa Econômia Aplicada) de janeiro de 2017 são mais de 100 mil. Assim visamos a valorização dos princípios da solidariedade. No momento é limitado ao município de Dourados</p></div>
   <button onclick="botaoum()">Fazer Parte</button>
 </div>
+
 <div class="hidden" id="login">
   E-mail<input type="email" id="email" placeholder="insira seu e-mail">
   Senha<input type="password" id="senha" placeholder="insira sua senha">
+  <p id="spamP3"></p>
   <button onclick="entrar()">Entrar</button>
   <button onclick="cadastro()">Cadastro</button>
 </div>
+
 <div class="hidden" id="cadastro">
  <!-- banco de dados -->
   Digite seu nome<input type="text" id="nome" placeholder="insira seu nome">
   Digite seu número<input type="number" id="numero" placeholder="insira seu numero">
   Digite seu e-mail<input type="email" id="emailCadastro" placeholder="insira seu email">
   Digite a senha<input type="password" id="senhaCadastro" placeholder="insira sua senha">
+  <p id="spamP"></p>
   <button onclick="cadastrar()">Cadastrar</button>
 </div>
 <div class="hidden" id="mapa">
   <!-- colocar menu -->
   <iframe src="https://www.google.com/maps/d/embed?mid=19KnvlGtGf04NfZN0FShWCaXaH9FB8CNd"></iframe>
-  <a href="https://drive.google.com/open?id=19KnvlGtGf04NfZN0FShWCaXaH9FB8CNd&usp=sharing" target="_blank">Mapa dos moradores de rua de Dourados-ms</a>
+  <a href="https://drive.google.com/open?id=19KnvlGtGf04NfZN0FShWCaXaH9FB8CNd&usp=sharing" target="_blank">Clique para entrar no Mapa de cadastro dos moradores de rua de Dourados-ms</a>
   <button onclick="registrar()">Registrar</button>
-  <button onclick="feed()">Feed</button>
 </div>
 <div class="hidden" id="registro">
   <!-- colocar menu -->

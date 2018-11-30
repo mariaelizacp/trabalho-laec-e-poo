@@ -95,14 +95,14 @@ body{
 #cadastro{
 	  border-bottom-left-radius: 5px;
   	border-bottom-right-radius: 5px;
-  	box-shadow: 0 10px 25px -10px #333;
+  	box-shadow: 0 20px 25px -10px #333;
   	background:#4DD0E1;
   	color: white;
   	font-size: 20px;
   	font-family: 'Niramit', sans-serif;
   	padding: 1rem;
   	position: absolute;
-  	top: 25%;
+    top: 25%;
     align-items: center;
     width: 30rem;
 }
@@ -120,7 +120,7 @@ body{
     background-color: #57BC90;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -167,7 +167,6 @@ body{
   	border-bottom-right-radius: 5px;
   	box-shadow: 0 10px 25px -10px #333;
   	background:#4DD0E1;
-  	color: #4CAF50;
   	font-size: 20px;
   	font-family: 'Niramit', sans-serif;
   	padding: 1rem;
@@ -212,15 +211,28 @@ body{
     text-align: justify;
     color:#4CAF50;
 }
-/* Definição de variáveis */
+#desc{
+    font-family: 'Niramit', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color:#4CAF50;
+}
+#spamp3{
+    bottom: -1rem;
+    color:white;
+    position: absolute;
+}
+#spamP{
+    bottom: 4rem;
+    color:white;
+    position: absolute;
+}
 :root{
   --cor-texto: white;
   --cor-texto-branco: #FEFEFE;
   --fundo-header: #4DD0E1;
   --altura-menu: 5rem;
 }
-
-/* Tipografia */
 a{
   text-decoration: none;
 }
@@ -331,7 +343,6 @@ header h1{
   top: 2rem;
 }
 
-/* Transições */
 nav,
 #menu-bar,
 header{
